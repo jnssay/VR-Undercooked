@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Multiplayer XR Template/Scenes/HomeScene.unity
+    guid: 7eac8c18a7dc1934a8578c774edd63a3
+  - enabled: 1
     path: Assets/Multiplayer XR Template/Scenes/XR Interaction.unity
     guid: 319dafa5c80f29f428dc1e0d03f04177
   m_configObjects:

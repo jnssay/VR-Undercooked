@@ -9,17 +9,17 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2886798386016433339}
-  - component: {fileID: 4078437730736232383}
-  - component: {fileID: 2662682140090125445}
-  - component: {fileID: 8149373694471929089}
-  - component: {fileID: 1286268693707978069}
+  - component: {fileID: 4856873792345849930}
+  - component: {fileID: 3954721804696807647}
+  - component: {fileID: 4128372209917674581}
+  - component: {fileID: 6417641579014137838}
   m_Layer: 5
   m_Name: PausedMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2886798386016433339
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40,7 +40,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4078437730736232383
+--- !u!114 &4856873792345849930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,10 +49,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 89293864599714351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 358e18210fd17a94eaeb1963de0a7153, type: 3}
+  m_Script: {fileID: 11500000, guid: 955009df5f097f241a63ac1ca4c6c13e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2662682140090125445
+--- !u!114 &3954721804696807647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,10 +61,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 89293864599714351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad6ef555100edbe42b80c3180cb03022, type: 3}
+  m_Script: {fileID: 11500000, guid: ac46add95d4dcf44486d521f29abe5f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8149373694471929089
+--- !u!114 &4128372209917674581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,12 +73,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 89293864599714351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b98805850c134b4896524bd191ae4be, type: 3}
+  m_Script: {fileID: 11500000, guid: 78957ded4716a9543ad06e4a55f203ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu_control: {fileID: 8220295964437677939}
+  menu_control: {fileID: 0}
   game_control: {fileID: 0}
---- !u!114 &1286268693707978069
+--- !u!114 &6417641579014137838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 89293864599714351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1094cf0ffd9f2748a2d2f02f44ccc52, type: 3}
+  m_Script: {fileID: 11500000, guid: 81ecba5ea8f881049b7c74aca3c7bfe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1837404899041678741
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1286268693707978069}
+      - m_Target: {fileID: 6417641579014137838}
         m_TargetAssemblyTypeName: SettingsButton, Assembly-CSharp
         m_MethodName: OpenSettings
         m_Mode: 1
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8149373694471929089}
+      - m_Target: {fileID: 4128372209917674581}
         m_TargetAssemblyTypeName: ResumeButton, Assembly-CSharp
         m_MethodName: ResumeStage
         m_Mode: 1
@@ -881,7 +881,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4078437730736232383}
+      - m_Target: {fileID: 4856873792345849930}
         m_TargetAssemblyTypeName: QuitButton, Assembly-CSharp
         m_MethodName: QuitStage
         m_Mode: 1
@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2662682140090125445}
+      - m_Target: {fileID: 3954721804696807647}
         m_TargetAssemblyTypeName: RestartButton, Assembly-CSharp
         m_MethodName: RestartStage
         m_Mode: 1
@@ -1173,8 +1173,7 @@ GameObject:
   - component: {fileID: 2491241479098845498}
   - component: {fileID: 5791068949404472409}
   - component: {fileID: 6412649333996217003}
-  - component: {fileID: 6167403301436665047}
-  - component: {fileID: 8220295964437677939}
+  - component: {fileID: 7040468777411822056}
   m_Layer: 5
   m_Name: PausedMenu
   m_TagString: Untagged
@@ -1247,7 +1246,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5791068949404472409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1284,20 +1283,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!114 &6167403301436665047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7496717924422430443}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4caef70e83475b744b62a020ae82a97f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
---- !u!114 &8220295964437677939
+--- !u!114 &7040468777411822056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1306,13 +1292,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7496717924422430443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c05993047b283314dabd86b1632b9b08, type: 3}
+  m_Script: {fileID: 11500000, guid: d279625d95cd43c479c459086983a520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 89293864599714351}
-  game_control: {fileID: 0}
-  open_menu_action: {fileID: 6494831269236004894, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  mainCamera: {fileID: 0}
+  open_menu_action: {fileID: -7101766417692186628, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
   menu_is_active: 0
 --- !u!1 &7791406945377897126
 GameObject:
