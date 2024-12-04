@@ -14,15 +14,10 @@ public class GameControl : MonoBehaviour
     public GameObject end_menu;
     public Camera mainCamera;
     public TextMeshProUGUI timer_text;
-    public TextMeshProUGUI countdown_text;
-    public GameObject countdown_panel;
     public float max_time = 240f; // 4 mins game time
     public float current_time;
+    public float score = 0f;
 
-
-    private float score = 0f;
-    private float initial_countdown = 3f;
-    private float current_countdown;
     private float minutes;
     private float seconds;
 
@@ -46,7 +41,7 @@ public class GameControl : MonoBehaviour
     void Start()
     {
         current_time = max_time;
-        current_countdown = initial_countdown;
+        
     }
 
     // Update is called once per frame
@@ -59,9 +54,6 @@ public class GameControl : MonoBehaviour
         if (stage_start)
         {
             Debug.Log("stage start");
-
-            current_countdown -= Time.deltaTime;
-            DisplayInitialCountdown();
         }
         if (stage_ongoing)
         {
@@ -76,30 +68,7 @@ public class GameControl : MonoBehaviour
         }
     }
 
-    private void DisplayInitialCountdown()
-    {
-        float countdown_in_integer = Mathf.FloorToInt((current_countdown + 1) % 60);
 
-        if (current_countdown > 0)
-        {
-            Debug.Log("countdown > 0");
-            countdown_panel.SetActive(true);
-            countdown_text.text = string.Format("{0}", countdown_in_integer);
-
-        }
-        else if (current_countdown <= 0 && current_countdown > -1)
-        {
-            Debug.Log("countdown == 0");
-            countdown_text.text = "Go!";
-        }
-        else if (current_countdown <= -1)
-        {
-            stage_start = false;
-            stage_ongoing = true;
-            countdown_panel.SetActive(false);
-        }
-
-    }
 
     public void DisplayTime()
     {
@@ -114,7 +83,7 @@ public class GameControl : MonoBehaviour
         if (current_time > 0)
         {
             minutes = Mathf.FloorToInt((current_time + 1) / 60);
-
+            
         }
         else
         {
@@ -125,6 +94,7 @@ public class GameControl : MonoBehaviour
 
         timer_text.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
     public void StageCleared()
     {
         stage_ongoing = false;
