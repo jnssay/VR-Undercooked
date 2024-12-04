@@ -14,6 +14,6 @@ public class ChallengeButton : MonoBehaviour
     public void LoadStage()
     {
         Debug.Log("loading stage 1");
-        SceneManager.LoadScene("Stage1");
+        SceneManager.LoadScene("XR Interaction");
     }
 }
