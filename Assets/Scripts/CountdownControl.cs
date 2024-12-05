@@ -7,10 +7,11 @@ using UnityEngine.UI;
 
 public class CountdownControl : MonoBehaviour
 {
-    public GameControl game_control;
+    
     public GameObject countdown_panel;
     public TextMeshProUGUI countdown_text;
 
+    private GameControl game_control;
     private float initial_countdown = 3f;
     private float current_countdown;
 
@@ -18,6 +19,7 @@ public class CountdownControl : MonoBehaviour
     void Start()
     {
         current_countdown = initial_countdown;
+        game_control = FindObjectOfType<GameControl>();
     }
 
     // Update is called once per frame
