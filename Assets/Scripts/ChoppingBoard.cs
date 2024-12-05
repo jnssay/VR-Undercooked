@@ -48,6 +48,7 @@ public class ChoppingBoard : MonoBehaviour
         if (choppedFoodPrefabs.ContainsKey(other.tag))
         {
             // Start the chopping process
+            Debug.Log("Chopping");
             StartCoroutine(ChopFood(other.gameObject));
         }
     }
