@@ -15,6 +15,8 @@ public class PlayerControl : MonoBehaviour
     private Camera mainCamera;
     private GameControl game_control;
     private bool already_exist = false;
+    private float max_respawn_countdown = 3f;
+    private float respawn_countdown;
 
     void Start()
     {
