@@ -19,6 +19,7 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        saved_position = transform.position;
         current_interval = max_interval;
         characterController = GetComponent<CharacterController>();
         game_control = FindObjectOfType<GameControl>();
