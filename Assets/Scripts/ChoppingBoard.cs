@@ -41,6 +41,7 @@ public class ChoppingBoard : MonoBehaviour
         }
     }
 
+
     private void OnTriggerEnter(Collider other)
     {
         // Check if the entering object has a tag that matches a known unchopped food
@@ -51,6 +52,7 @@ public class ChoppingBoard : MonoBehaviour
             StartCoroutine(ChopFood(other.gameObject));
         }
     }
+
 
     private IEnumerator ChopFood(GameObject unchoppedFood)
     {
@@ -64,9 +66,22 @@ public class ChoppingBoard : MonoBehaviour
         Vector3 position = unchoppedFood.transform.position;
         Quaternion rotation = unchoppedFood.transform.rotation;
 
-        // Instantiate the chopped food at the position of the unchopped food
-        Instantiate(choppedFoodPrefab, position, rotation);
+        // Instantiate the first chopped food at the position of the unchopped food
+        GameObject choppedFood1 = Instantiate(choppedFoodPrefab, position + new Vector3(-0.1f, 0, 0), rotation);
+        GameObject choppedFood2 = Instantiate(choppedFoodPrefab, position + new Vector3(0.1f, 0, 0), rotation);
 
+        // Apply force to make them fall to the side
+        Rigidbody rb1 = choppedFood1.GetComponent<Rigidbody>();
+        if (rb1 != null)
+        {
+            rb1.AddForce(new Vector3(-1, 0, 0), ForceMode.Impulse);
+        }
+
+        Rigidbody rb2 = choppedFood2.GetComponent<Rigidbody>();
+        if (rb2 != null)
+        {
+            rb2.AddForce(new Vector3(1, 0, 0), ForceMode.Impulse);
+        }
         // Destroy the unchopped food
         Destroy(unchoppedFood);
     }
