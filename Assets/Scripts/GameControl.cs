@@ -11,7 +11,7 @@ public class GameControl : MonoBehaviour
     public bool stage_clear = false;
     public bool stage_ongoing = false;
     public bool stage_start = true;
-    public GameObject end_menu;
+    //public GameObject end_menu;
     public Camera mainCamera;
     public TextMeshProUGUI timer_text;
     //public TextMeshProUGUI countdown_text;
@@ -101,25 +101,23 @@ public class GameControl : MonoBehaviour
 
     public void DisplayTime()
     {
-        if (stage_start)
+        float displayTime;
+
+        if (stage_start && !stage_ongoing) // Before countdown starts
         {
-            seconds = Mathf.FloorToInt(current_time % 60);
+            displayTime = Mathf.Ceil(current_time); // Always show the ceiling value
         }
-        else
+        else if (stage_ongoing) // During countdown
         {
-            seconds = Mathf.FloorToInt((current_time + 1) % 60);
+            displayTime = current_time > 0 ? Mathf.Ceil(current_time) : 0; // Use ceiling during countdown
         }
-        if (current_time > 0)
+        else // Edge case or default
         {
-            minutes = Mathf.FloorToInt((current_time + 1) / 60);
-            
-        }
-        else
-        {
-            minutes = 0f;
+            displayTime = current_time > 0 ? Mathf.Ceil(current_time) : 0;
         }
 
-
+        seconds = Mathf.FloorToInt(displayTime % 60);
+        minutes = Mathf.FloorToInt(displayTime / 60);
 
         timer_text.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
@@ -127,16 +125,16 @@ public class GameControl : MonoBehaviour
     {
         stage_ongoing = false;
         stage_clear = true;
-        // show end menu
-        end_menu.SetActive(true);
-        // Set the menu's position in front of the camera
-        if (mainCamera != null)
-        {
-            Vector3 positionInFrontOfCamera = mainCamera.transform.position + mainCamera.transform.forward * 1.0f;
-            positionInFrontOfCamera += mainCamera.transform.up * -0.2f;
-            end_menu.transform.position = positionInFrontOfCamera;
-            end_menu.transform.rotation = Quaternion.LookRotation(mainCamera.transform.forward);
-        }
+        //// show end menu
+        //end_menu.SetActive(true);
+        //// Set the menu's position in front of the camera
+        //if (mainCamera != null)
+        //{
+        //    Vector3 positionInFrontOfCamera = mainCamera.transform.position + mainCamera.transform.forward * 1.0f;
+        //    positionInFrontOfCamera += mainCamera.transform.up * -0.2f;
+        //    end_menu.transform.position = positionInFrontOfCamera;
+        //    end_menu.transform.rotation = Quaternion.LookRotation(mainCamera.transform.forward);
+        //}
     }
 
     private void StageStart()

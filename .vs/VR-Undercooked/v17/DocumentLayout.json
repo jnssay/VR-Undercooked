@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\startbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\startbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\startmenucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\startmenucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\endmenucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endmenucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\gamecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\startbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\startbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\restartbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\restartbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +30,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StartMenuControl.cs",
-              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\StartMenuControl.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\StartMenuControl.cs",
-              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\StartMenuControl.cs",
-              "RelativeToolTip": "Assets\\Scripts\\StartMenuControl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "PlayerControl.cs",
+              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayerControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
+              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayerControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerControl.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:52:13.866Z",
+              "WhenOpened": "2024-12-06T14:10:03.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "EndMenuControl.cs",
+              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\EndMenuControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EndMenuControl.cs",
+              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\EndMenuControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EndMenuControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T14:03:43.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GameControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\GameControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameControl.cs",
               "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\GameControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameControl.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwEgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:32:51.191Z"
+              "WhenOpened": "2024-12-06T13:32:51.191Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -63,11 +81,12 @@
               "RelativeToolTip": "Assets\\Scripts\\RestartButton.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:23:21.155Z"
+              "WhenOpened": "2024-12-06T13:23:21.155Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "StartButton.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\StartButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StartButton.cs",
