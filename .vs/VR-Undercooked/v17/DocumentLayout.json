@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\menucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\endmenucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endmenucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\restartbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\restartbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "MenuControl.cs",
+              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\MenuControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuControl.cs",
+              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\MenuControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MenuControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T02:22:32.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
@@ -47,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EndMenuControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\EndMenuControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EndMenuControl.cs",
@@ -60,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GameControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\GameControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameControl.cs",
@@ -68,12 +85,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameControl.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAYwEgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:32:51.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T13:32:51.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "RestartButton.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\RestartButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RestartButton.cs",
@@ -81,12 +97,11 @@
               "RelativeToolTip": "Assets\\Scripts\\RestartButton.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:23:21.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T13:23:21.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "StartButton.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\StartButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StartButton.cs",
@@ -94,8 +109,7 @@
               "RelativeToolTip": "Assets\\Scripts\\StartButton.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:13:54.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T13:13:54.097Z"
             }
           ]
         }

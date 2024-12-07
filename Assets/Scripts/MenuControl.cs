@@ -6,13 +6,16 @@ using UnityEngine.InputSystem;
 public class MenuControl : MonoBehaviour
 {
     public GameObject menu;
-    public GameControl game_control;
+
     public InputActionReference open_menu_action;
-    public Camera mainCamera; 
     public bool menu_is_active = false;
 
+    private Camera mainCamera;
+    private GameControl game_control;
     private void Awake()
     {
+        mainCamera = Camera.main;
+        game_control = FindObjectOfType<GameControl>();
         open_menu_action.action.Enable();
         // subscribe to ToggleMenu function -> when left menu button is clicked, ToggleMenu will be called
         open_menu_action.action.performed += ToggleMenu;
@@ -25,11 +28,13 @@ public class MenuControl : MonoBehaviour
         open_menu_action.action.performed -= ToggleMenu;
         InputSystem.onDeviceChange -= OnDeviceChange;
     }
-        
+
     public void ToggleMenu(InputAction.CallbackContext context)
     {
+        Debug.Log("menu toggled");
         if (!menu_is_active)
         {
+            Debug.Log("menu is active");
             menu_is_active = true;
             menu.SetActive(true);
             game_control.stage_ongoing = false;
@@ -45,11 +50,12 @@ public class MenuControl : MonoBehaviour
         }
         else
         {
+            Debug.Log("menu is inactive");
             menu_is_active = false;
             menu.SetActive(false);
             game_control.stage_ongoing = true;
         }
-        
+
     }
 
     private void OnDeviceChange(InputDevice device, InputDeviceChange change)
@@ -61,11 +67,11 @@ public class MenuControl : MonoBehaviour
                 open_menu_action.action.performed -= ToggleMenu;
                 break;
             case (InputDeviceChange.Reconnected):
-            {
+                {
                     open_menu_action.action.Enable();
                     open_menu_action.action.performed += ToggleMenu;
                     break;
-            }
+                }
         }
     }
 }
