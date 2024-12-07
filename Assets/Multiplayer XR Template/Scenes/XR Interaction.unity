@@ -12848,6 +12848,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 33753466059324350, guid: 7667f362441a5784cb678e738f1a5984,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 70088933863683698, guid: 7667f362441a5784cb678e738f1a5984,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -13018,6 +13023,11 @@ PrefabInstance:
       propertyPath: Multiplayer
       value: 
       objectReference: {fileID: 978248252}
+    - target: {fileID: 6082504188205703721, guid: 7667f362441a5784cb678e738f1a5984,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6289722997635941444, guid: 7667f362441a5784cb678e738f1a5984,
         type: 3}
       propertyPath: Multiplayer
