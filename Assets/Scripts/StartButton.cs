@@ -20,6 +20,7 @@ public class StartButton : MonoBehaviour
 
     public void StartStage()
     {
+        Debug.Log("stage started!");
         game_control.stage_start = false;
         game_control.stage_ongoing = true;
     }

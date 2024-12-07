@@ -20,7 +20,7 @@ public class StartMenuControl : MonoBehaviour
         {
             start_menu_panel.SetActive(true);
         }
-        else
+        else 
         {
             start_menu_panel.SetActive(false);
         }

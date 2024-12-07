@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - UnchoppedMeat
+  - Raw-Fry
+  - Sea
+  - Stove
   layers:
   - Default
   - TransparentFX
