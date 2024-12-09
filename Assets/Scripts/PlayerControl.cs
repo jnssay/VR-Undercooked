@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    public GameObject start_menu;
+    public GameObject end_menu;
+
     private bool is_dead = false;
     private Vector3 saved_position;
     private float max_interval = 2f;
@@ -11,7 +15,8 @@ public class PlayerControl : MonoBehaviour
     private CharacterController characterController;
     private Camera mainCamera;
     private GameControl game_control;
-    private bool already_exist = false;
+    private bool start_menu_exist = false;
+    private bool end_menu_exist = false;
 
     void Start()
     {
@@ -36,9 +41,23 @@ public class PlayerControl : MonoBehaviour
             saved_position = this.gameObject.transform.position;
             current_interval = max_interval;
         }
+        if (game_control.stage_start)
+        {
+            if (!start_menu_exist)
+            {
+                InstantiateMenu(start_menu);
+                start_menu_exist = true;
+            }
+            
+        }
         if (game_control.stage_clear)
         {
-
+            if (!end_menu_exist)
+            {
+                InstantiateMenu(end_menu);
+                end_menu_exist = true;
+            }
+            
         }
 
 
@@ -58,5 +77,13 @@ public class PlayerControl : MonoBehaviour
         Debug.Log("respawning");
         this.gameObject.transform.position = saved_position;
         is_dead = false;
+    }
+
+    private void InstantiateMenu(GameObject menu)
+    {
+        Debug.Log("instantiating menu!");
+        Vector3 positionInFrontOfCamera = mainCamera.transform.position + mainCamera.transform.forward * 1.0f;
+        //positionInFrontOfCamera += mainCamera.transform.up * -0.2f;
+        Instantiate(menu, positionInFrontOfCamera, Quaternion.LookRotation(mainCamera.transform.forward));
     }
 }

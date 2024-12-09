@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class EndMenuControl : MonoBehaviour
 {
-    public GameControl game_control;
     public GameObject end_menu;
+
+    private GameControl game_control;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        game_control = FindObjectOfType<GameControl>();
     }
 
     // Update is called once per frame

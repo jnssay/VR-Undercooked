@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
 {
-    public GameControl game_control;
+    private GameControl game_control;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        game_control = FindObjectOfType<GameControl>();
     }
 
     // Update is called once per frame
@@ -23,5 +24,6 @@ public class StartButton : MonoBehaviour
         Debug.Log("stage started!");
         game_control.stage_start = false;
         game_control.stage_ongoing = true;
+        Destroy(gameObject);
     }
 }

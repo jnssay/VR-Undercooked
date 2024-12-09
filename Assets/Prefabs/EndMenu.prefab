@@ -365,7 +365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3294946077425195752
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1155,7 +1155,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &3119014501405296120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1204,5 +1204,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5fb98ec432a004cb13f55780901eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game_control: {fileID: 0}
   end_menu: {fileID: 4752848582215897699}
