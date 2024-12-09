@@ -94,11 +94,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3554527e9ebec224c96f948e325ccd81,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5302637992612191720}
+      addedObject: {fileID: 8257462757054431148}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3554527e9ebec224c96f948e325ccd81,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4323364568339707757}
+      addedObject: {fileID: 6683853696141819281}
   m_SourcePrefab: {fileID: 100100000, guid: 3554527e9ebec224c96f948e325ccd81, type: 3}
 --- !u!1 &8011812909184545085 stripped
 GameObject:
@@ -323,7 +323,7 @@ MonoBehaviour:
   nextBurgerPrefab: {fileID: 2585515090432017836, guid: a923d67ceff394af29bac32227b15f96,
     type: 3}
   burgerStep: 1
---- !u!65 &5302637992612191720
+--- !u!65 &8257462757054431148
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,9 +342,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.3973236, y: 0.07834816, z: 0.37619781}
-  m_Center: {x: 0.06298828, y: 0.014575005, z: 0.0013313293}
---- !u!65 &4323364568339707757
+  m_Size: {x: 0.39032745, y: 0.120334625, z: 0.3966446}
+  m_Center: {x: 0.0031166077, y: 0.0332489, z: -0.0042533875}
+--- !u!65 &6683853696141819281
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -363,5 +363,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.3973236, y: 0.07834816, z: 0.37619781}
-  m_Center: {x: 0.06298828, y: 0.014575005, z: 0.0013313293}
+  m_Size: {x: 0.39032745, y: 0.120334625, z: 0.3966446}
+  m_Center: {x: 0.0031166077, y: 0.0332489, z: -0.0042533875}
