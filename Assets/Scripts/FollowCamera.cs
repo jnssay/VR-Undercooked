@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class FollowCamera : MonoBehaviour
 {
-    public Transform cam;
+    private Camera mainCamera;
 
+    void Start()
+    {
+        mainCamera = Camera.main;
+    }
     void LateUpdate()
     {
         // always face camera
-        transform.LookAt(transform.position + cam.forward);
+        if (mainCamera != null)
+        {
+            transform.LookAt(transform.position + mainCamera.transform.forward);
+        }
+        
     }
 }

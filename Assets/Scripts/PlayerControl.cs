@@ -24,6 +24,7 @@ public class PlayerControl : MonoBehaviour
         current_interval = max_interval;
         characterController = GetComponent<CharacterController>();
         game_control = FindObjectOfType<GameControl>();
+        saved_position = this.gameObject.transform.position;
     }
 
     // Update is called once per frame
@@ -67,6 +68,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (other.gameObject.tag == "Sea")
         {
+            Debug.Log("is dead!");
             is_dead = true;
             respawn();
         }

@@ -5,8 +5,7 @@ using UnityEngine;
 public class ChoppingBoard : MonoBehaviour
 {
     public GameObject choppedMeatPrefab;
-    public float choppingTime = 5.0f;
-        // Dictionary to map tags to their respective chopped prefabs
+    // Dictionary to map tags to their respective chopped prefabs
     public Dictionary<string, GameObject> choppedFoodPrefabs = new Dictionary<string, GameObject>();
 
     void Start()
@@ -17,8 +16,8 @@ public class ChoppingBoard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        KillUnchoppedFood();
-        // Chopping logic should be checked here
+        //KillUnchoppedFood();
+
     }
 
     private void KillUnchoppedFood()
@@ -45,44 +44,47 @@ public class ChoppingBoard : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Check if the entering object has a tag that matches a known unchopped food
-        if (choppedFoodPrefabs.ContainsKey(other.tag))
+        if (other.tag == "UnchoppedMeat")
         {
             // Start the chopping process
             Debug.Log("Chopping");
-            StartCoroutine(ChopFood(other.gameObject));
+            RawMeatControl raw_meat_control = other.gameObject.GetComponent<RawMeatControl>();
+            raw_meat_control.is_choppable = true;
         }
     }
 
 
-    private IEnumerator ChopFood(GameObject unchoppedFood)
-    {
-        // Wait for the chopping time to elapse
-        yield return new WaitForSeconds(choppingTime);
 
-        // Get the corresponding chopped prefab based on the tag
-        GameObject choppedFoodPrefab = choppedFoodPrefabs[unchoppedFood.tag];
+    //private IEnumerator ChopFood(GameObject unchoppedFood)
+    //{
+    //    // Wait for the chopping time to elapse
+    //    yield return new WaitForSeconds(choppingTime);
 
-        // Replace the unchopped food with the chopped version
-        Vector3 position = unchoppedFood.transform.position;
-        Quaternion rotation = unchoppedFood.transform.rotation;
+    //    // Get the corresponding chopped prefab based on the tag
+    //    GameObject choppedFoodPrefab = choppedFoodPrefabs[unchoppedFood.tag];
 
-        // Instantiate the first chopped food at the position of the unchopped food
-        GameObject choppedFood1 = Instantiate(choppedFoodPrefab, position + new Vector3(-0.1f, 0, 0), rotation);
-        GameObject choppedFood2 = Instantiate(choppedFoodPrefab, position + new Vector3(0.1f, 0, 0), rotation);
+    //    // Replace the unchopped food with the chopped version
+    //    Vector3 position = unchoppedFood.transform.position;
+    //    Quaternion rotation = unchoppedFood.transform.rotation;
 
-        // Apply force to make them fall to the side
-        Rigidbody rb1 = choppedFood1.GetComponent<Rigidbody>();
-        if (rb1 != null)
-        {
-            rb1.AddForce(new Vector3(-1, 0, 0), ForceMode.Impulse);
-        }
+    //    // Instantiate the first chopped food at the position of the unchopped food
+    //    GameObject choppedFood1 = Instantiate(choppedFoodPrefab, position + new Vector3(-0.1f, 0, 0), rotation);
+    //    GameObject choppedFood2 = Instantiate(choppedFoodPrefab, position + new Vector3(0.1f, 0, 0), rotation);
 
-        Rigidbody rb2 = choppedFood2.GetComponent<Rigidbody>();
-        if (rb2 != null)
-        {
-            rb2.AddForce(new Vector3(1, 0, 0), ForceMode.Impulse);
-        }
-        // Destroy the unchopped food
-        Destroy(unchoppedFood);
-    }
+    //    // Apply force to make them fall to the side
+    //    Rigidbody rb1 = choppedFood1.GetComponent<Rigidbody>();
+    //    if (rb1 != null)
+    //    {
+    //        rb1.AddForce(new Vector3(-1, 0, 0), ForceMode.Impulse);
+    //    }
+
+    //    Rigidbody rb2 = choppedFood2.GetComponent<Rigidbody>();
+    //    if (rb2 != null)
+    //    {
+    //        rb2.AddForce(new Vector3(1, 0, 0), ForceMode.Impulse);
+    //    }
+    //    // Destroy the unchopped food
+    //    Destroy(unchoppedFood);
+    //}
+
 }
