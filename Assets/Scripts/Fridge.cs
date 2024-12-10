@@ -9,12 +9,19 @@ public class Fridge : MonoBehaviour
     private Vector3 spawnPosition;
     private Quaternion spawnRotation;
     public float spawnWaitTime = 2f;
+    public bool useManualPosition = false;
+    public Vector3 manualSpawnPosition;
 
     void Awake()
     {
         targetComponentTag = foodPrefab.tag;
+
         // Store the spawn position slightly above the fridge
-        spawnPosition = transform.position + Vector3.up * 3f + Vector3.forward * 0.6f + Vector3.left * 0.5f; // Adjust the offset as needed
+        if (useManualPosition)
+            spawnPosition = manualSpawnPosition;
+        else
+            spawnPosition = transform.position + Vector3.up * 3f + Vector3.forward * 0.6f + Vector3.left * 0.5f; // Adjust the offset as needed
+
         spawnRotation = transform.rotation;
     }
 
