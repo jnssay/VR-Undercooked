@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 343eee699d5a4b4439f8eee9f54190e5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 77.00798
+      value: 60.798
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 343eee699d5a4b4439f8eee9f54190e5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.934584
+      value: 18.954
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 343eee699d5a4b4439f8eee9f54190e5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -95.844604
+      value: -103.36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 343eee699d5a4b4439f8eee9f54190e5,
         type: 3}
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -334,3 +334,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343d61e56e71ec640a929ed1481e5cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  max_num_chops: 5
+  current_num_chops: 0
+  is_choppable: 0
