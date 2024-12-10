@@ -14,11 +14,11 @@ public class Plating : MonoBehaviour
             Debug.Log("Plating burger");
             PlateBurger(other);
         }
-        if (other.CompareTag("SoupPrefinish"))
-        {
-            Debug.Log("Plating Soup");
-            PlateSoup(other);
-        }
+        //if (other.CompareTag("SoupPrefinish"))
+        //{
+        //    Debug.Log("Plating Soup");
+        //    PlateSoup(other);
+        //}
     }
 
     private void PlateBurger(Collider other)

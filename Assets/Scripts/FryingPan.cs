@@ -80,14 +80,22 @@ public class FryingPan : MonoBehaviour
         // Wait for the cooking time to elapse
         Debug.Log("Cooking");
         yield return new WaitForSeconds(cookingTime);
+        Vector3 position;
+        Quaternion rotation;
 
         // Replace the raw food with the cooked version
-        Vector3 position = rawFood.transform.position;
-        Quaternion rotation = rawFood.transform.rotation;
+        if (rawFood != null )
+        {
+            position = rawFood.transform.position;
+            rotation = rawFood.transform.rotation;
+            // Instantiate the cooked food at the position of the raw food
+            GameObject cookedFood = Instantiate(cookedFoodPrefab, position, rotation);
+            FlipFood(cookedFood);
+        }
 
-        // Instantiate the cooked food at the position of the raw food
-        GameObject cookedFood = Instantiate(cookedFoodPrefab, position, rotation);
-        FlipFood(cookedFood);
+
+
+        
         // Destroy the raw food
         Destroy(rawFood);
     }
