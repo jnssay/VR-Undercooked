@@ -11,6 +11,12 @@ TagManager:
   - BurgerFinish
   - BurgerPrefinish
   - Plate
+  - BurgerStep1
+  - BurgerStep2
+  - BurgerPatty
+  - BurgerStep3
+  - BurgerCheese
+  - UnchoppedCheese
   layers:
   - Default
   - TransparentFX
