@@ -8,13 +8,14 @@ public class FollowCamera : MonoBehaviour
 
     void Start()
     {
-        mainCamera = Camera.main;
+       
     }
-    void LateUpdate()
+    void Update()
     {
         // always face camera
         if (mainCamera != null)
         {
+            mainCamera = Camera.main;
             transform.LookAt(transform.position + mainCamera.transform.forward);
         }
         

@@ -84,8 +84,12 @@ public class PlayerControl : MonoBehaviour
     private void InstantiateMenu(GameObject menu)
     {
         Debug.Log("instantiating menu!");
-        Vector3 positionInFrontOfCamera = mainCamera.transform.position + mainCamera.transform.forward * 1.0f;
-        //positionInFrontOfCamera += mainCamera.transform.up * -0.2f;
-        Instantiate(menu, positionInFrontOfCamera, Quaternion.LookRotation(mainCamera.transform.forward));
+        if (mainCamera != null)
+        {
+            Vector3 positionInFrontOfCamera = mainCamera.transform.position + mainCamera.transform.forward * 1.0f;
+            positionInFrontOfCamera += mainCamera.transform.up * 1f;
+            Instantiate(menu, positionInFrontOfCamera, Quaternion.LookRotation(mainCamera.transform.forward));
+        }
+
     }
 }

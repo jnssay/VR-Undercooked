@@ -14,7 +14,7 @@ public class MenuControl : MonoBehaviour
     private GameControl game_control;
     private void Awake()
     {
-        mainCamera = Camera.main;
+        
         game_control = FindObjectOfType<GameControl>();
         open_menu_action.action.Enable();
         // subscribe to ToggleMenu function -> when left menu button is clicked, ToggleMenu will be called
@@ -38,14 +38,15 @@ public class MenuControl : MonoBehaviour
             menu_is_active = true;
             menu.SetActive(true);
             game_control.stage_ongoing = false;
-
+            mainCamera = Camera.main;
             // Set the menu's position in front of the camera
             if (mainCamera != null)
             {
+                Debug.Log("move menu to infront of player");
                 Vector3 positionInFrontOfCamera = mainCamera.transform.position + mainCamera.transform.forward * 1.0f;
                 positionInFrontOfCamera += mainCamera.transform.up * -0.2f;
-                menu.transform.position = positionInFrontOfCamera;
-                menu.transform.rotation = Quaternion.LookRotation(mainCamera.transform.forward);
+                transform.position = positionInFrontOfCamera;
+                transform.rotation = Quaternion.LookRotation(mainCamera.transform.forward);
             }
         }
         else
