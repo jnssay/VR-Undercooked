@@ -7,6 +7,8 @@ public class ChoppingBoard : MonoBehaviour
     public GameObject choppedMeatPrefab;
     // Dictionary to map tags to their respective chopped prefabs
     public Dictionary<string, GameObject> choppedFoodPrefabs = new Dictionary<string, GameObject>();
+    public NumChopsBarControl num_chops_bar_control;
+    public GameObject num_chops_bar;
 
     void Start()
     {
@@ -41,16 +43,60 @@ public class ChoppingBoard : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    // Check if the entering object has a tag that matches a known unchopped food
+    //    if (other.tag == "UnchoppedMeat")
+    //    {
+    //        // Start the chopping process
+    //        Debug.Log("Chopping");
+    //        RawFoodControl raw_food_control = other.gameObject.GetComponent<RawFoodControl>();
+    //        raw_food_control.is_choppable = true;
+    //        num_chops_bar.SetActive(true);
+    //        if (raw_food_control.current_num_chops != 0)
+    //        {
+    //            Debug.Log("changing value!");
+    //            num_chops_bar_control.hp_slider.value = raw_food_control.max_num_chops - raw_food_control.current_num_chops;
+    //        }
+    //        else
+    //        {
+    //            Debug.Log("setting value!");
+    //            num_chops_bar_control.hp_slider.maxValue = raw_food_control.max_num_chops;
+    //            num_chops_bar_control.hp_slider.value = num_chops_bar_control.hp_slider.maxValue;
+    //        }
+
+
+    //    }
+    //}
+
+    private void OnTriggerStay(Collider other)
     {
-        // Check if the entering object has a tag that matches a known unchopped food
         if (other.tag == "UnchoppedMeat")
         {
             // Start the chopping process
             Debug.Log("Chopping");
-            RawMeatControl raw_meat_control = other.gameObject.GetComponent<RawMeatControl>();
-            raw_meat_control.is_choppable = true;
+            RawFoodControl raw_food_control = other.gameObject.GetComponent<RawFoodControl>();
+            raw_food_control.is_choppable = true;
+            num_chops_bar.SetActive(true);
+            if (raw_food_control.current_num_chops != 0)
+            {
+                Debug.Log("changing value!");
+                num_chops_bar_control.hp_slider.value = raw_food_control.max_num_chops - raw_food_control.current_num_chops;
+            }
+            else
+            {
+                Debug.Log("setting value!");
+                num_chops_bar_control.hp_slider.maxValue = raw_food_control.max_num_chops;
+                num_chops_bar_control.hp_slider.value = num_chops_bar_control.hp_slider.maxValue;
+            }
+
+
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        num_chops_bar.SetActive(false);
     }
 
 

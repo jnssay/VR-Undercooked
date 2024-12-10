@@ -25,17 +25,17 @@ public class KnifeControl : MonoBehaviour
         {
             // Start the chopping process
             
-            RawMeatControl raw_meat_control = other.gameObject.GetComponent<RawMeatControl>();
+            RawFoodControl raw_food_control = other.gameObject.GetComponent<RawFoodControl>();
             // only chop if the game object is choppable
-            if (raw_meat_control.is_choppable)
+            if (raw_food_control.is_choppable)
             {
-                if (raw_meat_control.current_num_chops >= raw_meat_control.max_num_chops)
+                if (raw_food_control.current_num_chops >= raw_food_control.max_num_chops)
                 {
                     ChopFood(other.gameObject);
                 }
                 else
                 {
-                    raw_meat_control.current_num_chops += 1;
+                    raw_food_control.current_num_chops += 1;
                 }
                 
                 

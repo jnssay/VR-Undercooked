@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RawMeatControl : MonoBehaviour
+public class RawFoodControl : MonoBehaviour
 {
     public float max_num_chops = 5f;
     public float current_num_chops;
