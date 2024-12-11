@@ -85,10 +85,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0043ea06431d208498ee75d77301f3b1,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2571269345272619131}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0043ea06431d208498ee75d77301f3b1,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4345241581070987879}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0043ea06431d208498ee75d77301f3b1,
         type: 3}
@@ -98,10 +94,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1445824121264602255}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0043ea06431d208498ee75d77301f3b1,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6793201210571909775}
   m_SourcePrefab: {fileID: 100100000, guid: 0043ea06431d208498ee75d77301f3b1, type: 3}
 --- !u!1 &2496484245449282748 stripped
 GameObject:
@@ -109,33 +101,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3342835170382195181}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &2571269345272619131
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2496484245449282748}
-  serializedVersion: 4
-  m_Mass: 100
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4345241581070987879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,40 +160,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.2000003, y: 9.199999, z: 3.6193395}
   m_Center: {x: 2.6000001, y: 4.5999994, z: 1.6096697}
---- !u!114 &6793201210571909775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2496484245449282748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1576325847, guid: 0ae8d181602a00248a82f64a684a1c88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Multiplayer: {fileID: 0}
-  _uidString: 18857715-58cb-4ea1-82c3-6c614f6bd7af
-  BucketBehaviors:
-  - Name: Min
-    NetLOD: 0
-    Frequency: -1
-  - Name: Low
-    NetLOD: 1
-    Frequency: 0
-  - Name: Mid
-    NetLOD: 2
-    Frequency: 0
-  - Name: High
-    NetLOD: 3
-    Frequency: 0
-  - Name: Max
-    NetLOD: 4
-    Frequency: 120
-  Reliability: 1
-  SyncEveryNUpdates: 2
-  FullSyncEveryNSync: 4
-  SendData: 1
-  ApplyAsTransform: 0
-  AllowCollisionToAssumeOwner: 1
-  Rigidbody: {fileID: 2571269345272619131}
