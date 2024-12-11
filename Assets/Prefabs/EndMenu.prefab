@@ -1205,3 +1205,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   end_menu: {fileID: 4752848582215897699}
+  scoreText: {fileID: 2042101157083176359}

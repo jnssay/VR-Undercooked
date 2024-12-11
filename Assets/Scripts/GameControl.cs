@@ -25,6 +25,7 @@ public class GameControl : MonoBehaviour
     private float minutes;
     private float seconds;
 
+    public box scoreControl;
 
 
     // Awake() is called when this script is loaded and is only called once per lifetime of this script
@@ -125,6 +126,7 @@ public class GameControl : MonoBehaviour
     {
         stage_ongoing = false;
         stage_clear = true;
+        score = scoreControl.PlayerScore;
         //// show end menu
         //end_menu.SetActive(true);
         //// Set the menu's position in front of the camera
