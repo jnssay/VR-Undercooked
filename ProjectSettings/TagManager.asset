@@ -18,6 +18,9 @@ TagManager:
   - BurgerCheese
   - UnchoppedCheese
   - SoupPrefinish
+  - SoupFinish
+  - Bowl
+  - Cup
   layers:
   - Default
   - TransparentFX
