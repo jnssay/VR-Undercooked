@@ -107,6 +107,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4505263337864770734}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1910ab3c2bd42ec4c8781516e0be6618,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5707408549825209493}
   m_SourcePrefab: {fileID: 100100000, guid: 1910ab3c2bd42ec4c8781516e0be6618, type: 3}
 --- !u!1 &5079816133662432903 stripped
 GameObject:
@@ -353,3 +357,40 @@ MonoBehaviour:
     type: 3}
   emptyPotPrefab: {fileID: 7524562330834410646, guid: bb50360223bc54a22890a3aedd1da197,
     type: 3}
+--- !u!114 &-5707408549825209493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5079816133662432903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1576325847, guid: 0ae8d181602a00248a82f64a684a1c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Multiplayer: {fileID: 0}
+  _uidString: 52b39d42-ee2b-4991-a43b-bab74ec11c8f
+  BucketBehaviors:
+  - Name: Min
+    NetLOD: 0
+    Frequency: -1
+  - Name: Low
+    NetLOD: 1
+    Frequency: 0
+  - Name: Mid
+    NetLOD: 2
+    Frequency: 0
+  - Name: High
+    NetLOD: 3
+    Frequency: 0
+  - Name: Max
+    NetLOD: 4
+    Frequency: 120
+  Reliability: 1
+  SyncEveryNUpdates: 2
+  FullSyncEveryNSync: 4
+  SendData: 1
+  ApplyAsTransform: 0
+  AllowCollisionToAssumeOwner: 1
+  Rigidbody: {fileID: 459946482962866967}

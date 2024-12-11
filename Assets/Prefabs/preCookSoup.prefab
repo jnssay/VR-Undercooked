@@ -112,6 +112,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -8576257826654662422}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1910ab3c2bd42ec4c8781516e0be6618,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -429026101526052881}
   m_SourcePrefab: {fileID: 100100000, guid: 1910ab3c2bd42ec4c8781516e0be6618, type: 3}
 --- !u!1 &7590418528398971278 stripped
 GameObject:
@@ -357,3 +361,41 @@ MonoBehaviour:
   preFinishSoupPrefab: {fileID: 5079816133662432903, guid: 73cacb1e45807415baac2fedd1e3104e,
     type: 3}
   cookingTime: 3
+  targetComponentTag: Stove
+--- !u!114 &-429026101526052881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7590418528398971278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1576325847, guid: 0ae8d181602a00248a82f64a684a1c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Multiplayer: {fileID: 0}
+  _uidString: d9ce08b4-8c26-4095-9d7a-25a0a9948cbe
+  BucketBehaviors:
+  - Name: Min
+    NetLOD: 0
+    Frequency: -1
+  - Name: Low
+    NetLOD: 1
+    Frequency: 0
+  - Name: Mid
+    NetLOD: 2
+    Frequency: 0
+  - Name: High
+    NetLOD: 3
+    Frequency: 0
+  - Name: Max
+    NetLOD: 4
+    Frequency: 120
+  Reliability: 1
+  SyncEveryNUpdates: 2
+  FullSyncEveryNSync: 4
+  SendData: 1
+  ApplyAsTransform: 0
+  AllowCollisionToAssumeOwner: 1
+  Rigidbody: {fileID: 8690461643450280017}

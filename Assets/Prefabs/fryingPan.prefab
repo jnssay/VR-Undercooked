@@ -91,6 +91,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 366146489171560832}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a6a9d322e065cec4782c55241a67159e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4879919006376083331}
   m_SourcePrefab: {fileID: 100100000, guid: a6a9d322e065cec4782c55241a67159e, type: 3}
 --- !u!1 &3021668581529824537 stripped
 GameObject:
@@ -359,3 +363,40 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &4879919006376083331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3021668581529824537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1576325847, guid: 0ae8d181602a00248a82f64a684a1c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Multiplayer: {fileID: 0}
+  _uidString: 10019ec7-2b3b-4042-9814-5b4a851c9b19
+  BucketBehaviors:
+  - Name: Min
+    NetLOD: 0
+    Frequency: -1
+  - Name: Low
+    NetLOD: 1
+    Frequency: 0
+  - Name: Mid
+    NetLOD: 2
+    Frequency: 0
+  - Name: High
+    NetLOD: 3
+    Frequency: 0
+  - Name: Max
+    NetLOD: 4
+    Frequency: 120
+  Reliability: 1
+  SyncEveryNUpdates: 2
+  FullSyncEveryNSync: 4
+  SendData: 1
+  ApplyAsTransform: 0
+  AllowCollisionToAssumeOwner: 1
+  Rigidbody: {fileID: 5025342700258602198}
