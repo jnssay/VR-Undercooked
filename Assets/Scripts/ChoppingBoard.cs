@@ -5,6 +5,7 @@ using UnityEngine;
 public class ChoppingBoard : MonoBehaviour
 {
     public GameObject choppedMeatPrefab;
+    public GameObject choppedCheesePrefab;
     // Dictionary to map tags to their respective chopped prefabs
     public Dictionary<string, GameObject> choppedFoodPrefabs = new Dictionary<string, GameObject>();
     public NumChopsBarControl num_chops_bar_control;
@@ -13,6 +14,7 @@ public class ChoppingBoard : MonoBehaviour
     void Start()
     {
         choppedFoodPrefabs.Add("UnchoppedMeat", choppedMeatPrefab);
+        choppedFoodPrefabs.Add("UnchoppedCheese", choppedCheesePrefab);
     }
 
     // Update is called once per frame
@@ -22,56 +24,56 @@ public class ChoppingBoard : MonoBehaviour
 
     }
 
-    private void KillUnchoppedFood()
-    {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
-        foreach (Collider collider in colliders)
-        {
-            if (collider.CompareTag("UnchoppedMeat"))
-            {
-                RaycastHit whatFoodHit;
-                if (Physics.Raycast(collider.transform.position, Vector3.up, out whatFoodHit))
-                {
-                    if (whatFoodHit.collider.CompareTag("Raw-Fry"))
-                    {
-                        Debug.Log("Unchopped Food still here after cooked food has spawned");
-                        Destroy(collider.gameObject);
-                    }
-                }
-            }
-        }
-    }
-
-
-    //private void OnTriggerEnter(Collider other)
+    //private void KillUnchoppedFood()
     //{
-    //    // Check if the entering object has a tag that matches a known unchopped food
-    //    if (other.tag == "UnchoppedMeat")
+    //    Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
+    //    foreach (Collider collider in colliders)
     //    {
-    //        // Start the chopping process
-    //        Debug.Log("Chopping");
-    //        RawFoodControl raw_food_control = other.gameObject.GetComponent<RawFoodControl>();
-    //        raw_food_control.is_choppable = true;
-    //        num_chops_bar.SetActive(true);
-    //        if (raw_food_control.current_num_chops != 0)
+    //        if (collider.CompareTag("UnchoppedMeat"))
     //        {
-    //            Debug.Log("changing value!");
-    //            num_chops_bar_control.hp_slider.value = raw_food_control.max_num_chops - raw_food_control.current_num_chops;
+    //            RaycastHit whatFoodHit;
+    //            if (Physics.Raycast(collider.transform.position, Vector3.up, out whatFoodHit))
+    //            {
+    //                if (whatFoodHit.collider.CompareTag("Raw-Fry"))
+    //                {
+    //                    Debug.Log("Unchopped Food still here after cooked food has spawned");
+    //                    Destroy(collider.gameObject);
+    //                }
+    //            }
     //        }
-    //        else
-    //        {
-    //            Debug.Log("setting value!");
-    //            num_chops_bar_control.hp_slider.maxValue = raw_food_control.max_num_chops;
-    //            num_chops_bar_control.hp_slider.value = num_chops_bar_control.hp_slider.maxValue;
-    //        }
-
-
     //    }
     //}
 
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // Check if the entering object has a tag that matches a known unchopped food
+        if (other.tag == "UnchoppedMeat" || other.tag == "UnchoppedCheese")
+        {
+            // Start the chopping process
+            Debug.Log("Chopping");
+            RawFoodControl raw_food_control = other.gameObject.GetComponent<RawFoodControl>();
+            raw_food_control.is_choppable = true;
+            num_chops_bar.SetActive(true);
+            if (raw_food_control.current_num_chops != 0)
+            {
+                Debug.Log("changing value!");
+                num_chops_bar_control.hp_slider.value = raw_food_control.max_num_chops - raw_food_control.current_num_chops;
+            }
+            else
+            {
+                Debug.Log("setting value!");
+                num_chops_bar_control.hp_slider.maxValue = raw_food_control.max_num_chops;
+                num_chops_bar_control.hp_slider.value = num_chops_bar_control.hp_slider.maxValue;
+            }
+
+
+        }
+    }
+
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "UnchoppedMeat")
+        if (other.tag == "UnchoppedMeat" || other.tag == "UnchoppedCheese")
         {
             // Start the chopping process
             Debug.Log("Chopping");
@@ -96,7 +98,14 @@ public class ChoppingBoard : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        num_chops_bar.SetActive(false);
+        
+        if (other.tag == "UnchoppedMeat" || other.tag == "UnchoppedCheese")
+        {
+
+            RawFoodControl raw_food_control = other.gameObject.GetComponent<RawFoodControl>();
+            raw_food_control.is_choppable = false;
+            num_chops_bar.SetActive(false);
+        }
     }
 
 
