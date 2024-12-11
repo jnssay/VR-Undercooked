@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayAudioOnTrigger : MonoBehaviour
 {
-    public AudioClip chop_meat_sound;
+    public AudioClip sound;
 
     private AudioSource source;
 
@@ -19,9 +19,16 @@ public class PlayAudioOnTrigger : MonoBehaviour
         if (other.tag == "UnchoppedMeat")
         {
             if (source != null){
-                source.PlayOneShot(chop_meat_sound);
+                source.PlayOneShot(sound);
             }
-            
+
+        }
+        if ((other.tag == "BurgerFinish") || (other.tag == "SoupFinish"))
+        {
+            if (source != null)
+            {
+                source.PlayOneShot(sound);
+            }
         }
     }
 }
