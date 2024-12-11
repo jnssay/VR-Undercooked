@@ -5,11 +5,13 @@ using UnityEngine;
 public class KnifeControl : MonoBehaviour
 {
     public GameObject choppedMeatPrefab;
+    public GameObject choppedCheesePrefab;
     public Dictionary<string, GameObject> choppedFoodPrefabs = new Dictionary<string, GameObject>();
     // Start is called before the first frame update
     void Start()
     {
         choppedFoodPrefabs.Add("UnchoppedMeat", choppedMeatPrefab);
+        choppedFoodPrefabs.Add("UnchoppedCheese", choppedCheesePrefab);
     }
 
     // Update is called once per frame
@@ -21,7 +23,7 @@ public class KnifeControl : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Check if the entering object has a tag that matches a known unchopped food
-        if (other.tag == "UnchoppedMeat")
+        if (other.tag == "UnchoppedMeat" || other.tag == "UnchoppedCheese")
         {
             // Start the chopping process
             

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayAudioOnTrigger : MonoBehaviour
 {
     public AudioClip chop_meat_sound;
+    public AudioClip chop_cheese_sound;
 
     private AudioSource source;
 
@@ -18,10 +19,21 @@ public class PlayAudioOnTrigger : MonoBehaviour
     {
         if (other.tag == "UnchoppedMeat")
         {
-            if (source != null){
+            RawFoodControl raw_food_control = other.gameObject.GetComponent<RawFoodControl>();
+            if (source != null && raw_food_control.is_choppable)
+            {
                 source.PlayOneShot(chop_meat_sound);
             }
             
+        }
+        if (other.tag == "UnchoppedCheese")
+        {
+            RawFoodControl raw_food_control = other.gameObject.GetComponent<RawFoodControl>();
+            if (source != null && raw_food_control.is_choppable)
+            {
+                source.PlayOneShot(chop_cheese_sound);
+            }
+
         }
     }
 }
