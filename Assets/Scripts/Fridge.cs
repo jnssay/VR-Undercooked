@@ -5,7 +5,7 @@ public class Fridge : MonoBehaviour
 {
     public GameObject foodPrefab;
     private string targetComponentTag;
-    private bool foodOnFridge = true;
+    public bool foodOnFridge = true;
     private Vector3 spawnPosition;
     private Quaternion spawnRotation;
     public float spawnWaitTime = 2f;
