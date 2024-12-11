@@ -144,9 +144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31a4f065918714a64b80ab615d897492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodPrefab: {fileID: 2916188035900656162, guid: 0f309bb129c9e41c9b133d35887ad215,
-    type: 3}
+  foodPrefab: {fileID: 0}
+  foodOnFridge: 1
   spawnWaitTime: 2
+  useManualPosition: 0
+  manualSpawnPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &8276065096170150851
 BoxCollider:
   m_ObjectHideFlags: 0
