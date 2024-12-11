@@ -17,6 +17,7 @@ TagManager:
   - BurgerStep3
   - BurgerCheese
   - UnchoppedCheese
+  - SoupPrefinish
   layers:
   - Default
   - TransparentFX

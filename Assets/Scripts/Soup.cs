@@ -81,8 +81,8 @@ public class Soup : MonoBehaviour
                 Debug.Log("Cooking stopped because readyToCook is false.");
                 yield break; // Exit the coroutine
             }
-
             elapsedTime += Time.deltaTime;
+            Debug.Log(elapsedTime);
             yield return null; // Wait for the next frame
         }
 
@@ -91,6 +91,7 @@ public class Soup : MonoBehaviour
         // Fire should be triggered here
 
         // Soup is done
+        Debug.Log("Soup is done cooking");
         Instantiate(PreFinishSoupPrefab, position, rotation);
         Destroy(pot.gameObject);
         Destroy(PreCookSoup);

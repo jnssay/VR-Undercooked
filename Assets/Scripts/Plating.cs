@@ -6,7 +6,6 @@ using UnityEngine;
 public class Plating : MonoBehaviour
 {
     public GameObject burgerPrefab;
-    public GameObject soupPrefab;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("BurgerPrefinish"))
@@ -31,13 +30,5 @@ public class Plating : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void PlateSoup(Collider other)
-    {
-        Vector3 position = other.transform.position;
-        Quaternion rotation = other.transform.rotation;
-        GameObject burger = Instantiate(soupPrefab, position, rotation);
-        Destroy(other.gameObject);
-        Destroy(gameObject);
-    }
 
 }
