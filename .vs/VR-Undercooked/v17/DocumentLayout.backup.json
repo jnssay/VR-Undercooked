@@ -3,19 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\endmenucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endmenucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\fryingpancontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fryingpancontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\addtocannon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\knifecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\knifecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\addtocannon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\addtocannon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\choppingboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\choppingboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\timercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\endmenucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endmenucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\playaudioontrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playaudioontrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|c:\\users\\wangx\\sutd\\vr-undercooked\\assets\\scripts\\playerrespawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\playerrespawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerrespawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\numchopsbarcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\knifecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\knifecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\rawfoodcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rawfoodcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\resumebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\resumebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\choppingboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\choppingboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89375EDD-EA49-652A-F373-357915D52ACE}|Assembly-CSharp.csproj|C:\\Users\\wangx\\SUTD\\VR-Undercooked\\assets\\scripts\\followcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,58 +95,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EndMenuControl.cs",
-              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\EndMenuControl.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EndMenuControl.cs",
-              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\EndMenuControl.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EndMenuControl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "FryingPanControl.cs",
+              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\FryingPanControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FryingPanControl.cs",
+              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\FryingPanControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FryingPanControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T03:33:59.617Z",
+              "WhenOpened": "2024-12-12T04:16:05.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ADDTOCANNON.cs",
-              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\ADDTOCANNON.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ADDTOCANNON.cs",
-              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\ADDTOCANNON.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ADDTOCANNON.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T03:25:49.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayAudioOnTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayAudioOnTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayAudioOnTrigger.cs",
-              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayAudioOnTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayAudioOnTrigger.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T06:31:49.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerRespawn.cs",
-              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayerRespawn.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerRespawn.cs",
-              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayerRespawn.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerRespawn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T12:17:08.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Plating.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\Plating.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Plating.cs",
@@ -150,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "FryingPan.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\FryingPan.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FryingPan.cs",
@@ -162,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "RawFoodControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\RawFoodControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RawFoodControl.cs",
@@ -174,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "ResumeButton.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\ResumeButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ResumeButton.cs",
@@ -186,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "MenuControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\MenuControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuControl.cs",
@@ -198,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "StartMenuControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\StartMenuControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StartMenuControl.cs",
@@ -210,19 +179,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
+              "Title": "ChoppingBoard.cs",
+              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\ChoppingBoard.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ChoppingBoard.cs",
+              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\ChoppingBoard.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ChoppingBoard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T07:58:26.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ADDTOCANNON.cs",
+              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\ADDTOCANNON.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ADDTOCANNON.cs",
+              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\ADDTOCANNON.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ADDTOCANNON.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T03:25:49.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "KnifeControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\KnifeControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\KnifeControl.cs",
               "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\KnifeControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\KnifeControl.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBcAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T08:35:53.46Z"
+              "WhenOpened": "2024-12-09T08:35:53.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "PlayerRespawn.cs",
+              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayerRespawn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerRespawn.cs",
+              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayerRespawn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerRespawn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T12:17:08.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayAudioOnTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayAudioOnTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayAudioOnTrigger.cs",
+              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayAudioOnTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayAudioOnTrigger.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T06:31:49.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EndMenuControl.cs",
+              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\EndMenuControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EndMenuControl.cs",
+              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\EndMenuControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EndMenuControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T03:33:59.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TimerControl.cs",
+              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\TimerControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TimerControl.cs",
+              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\TimerControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TimerControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T03:35:12.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "NumChopsBarControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\NumChopsBarControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NumChopsBarControl.cs",
@@ -234,19 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ChoppingBoard.cs",
-              "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\ChoppingBoard.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ChoppingBoard.cs",
-              "ToolTip": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\ChoppingBoard.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ChoppingBoard.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAiwEUAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T07:58:26.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "FollowCamera.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\FollowCamera.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FollowCamera.cs",
@@ -258,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "TimerBarControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\TimerBarControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TimerBarControl.cs",
@@ -270,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "PlayerControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
@@ -282,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "GameControl.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\GameControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameControl.cs",
@@ -294,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "RestartButton.cs",
               "DocumentMoniker": "C:\\Users\\wangx\\SUTD\\VR-Undercooked\\Assets\\Scripts\\RestartButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RestartButton.cs",

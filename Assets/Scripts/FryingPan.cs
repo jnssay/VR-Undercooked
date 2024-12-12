@@ -9,9 +9,11 @@ public class FryingPan : MonoBehaviour
 {
     // Time it takes to cook the food in seconds
     public float cookingTime = 5.0f;
+    public float time_left;
     private bool readyToCook = false;
     public float flipForce = 1.0f;
-
+    public NumChopsBarControl num_chops_bar_control;
+    public GameObject num_chops_bar;
 
 
     // Reference to the cooked version prefab
@@ -19,10 +21,29 @@ public class FryingPan : MonoBehaviour
 
     public string targetComponentTag = "Stove";
 
+    private bool is_cooking = false;
+
+    private void Start()
+    {
+        time_left = cookingTime;
+    }
+
     private void Update()
     {
         CheckIfOnTargetComponent();
         // KillRawFood();
+        if (is_cooking)
+        {
+            time_left -= Time.deltaTime;
+            if (num_chops_bar_control.hp_slider.value != time_left)
+            {
+                num_chops_bar_control.hp_slider.value = time_left;
+            }
+            if (num_chops_bar_control.hp_slider.value <= 0)
+            {
+                num_chops_bar.SetActive(false);
+            }
+        }
     }
 
     private void CheckIfOnTargetComponent()
@@ -70,7 +91,13 @@ public class FryingPan : MonoBehaviour
             // Start the cooking process
             if (readyToCook)
             {
+                num_chops_bar.SetActive(true);
+                num_chops_bar_control.hp_slider.maxValue = cookingTime;
+                num_chops_bar_control.hp_slider.value = num_chops_bar_control.hp_slider.maxValue;
+                is_cooking = true;
                 StartCoroutine(CookFood(other.gameObject));
+
+
             }
             // StartCoroutine(CookFood(other.gameObject));
         }
