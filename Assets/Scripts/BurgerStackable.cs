@@ -62,7 +62,7 @@ public class BurgerStackable : MonoBehaviour
         Quaternion rotation = transform.rotation; // Keep the same rotation
 
         // GameObject burger = Instantiate(nextBurgerPrefab, position, rotation);
-        GameObject burger = spawner.Spawn(burgerStep-1, position, rotation);
+        GameObject burger = spawner.Spawn(0, position, rotation);
 
         // Clean up the current and other objects
         Destroy(other.gameObject);
