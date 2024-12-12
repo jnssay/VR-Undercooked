@@ -263,6 +263,7 @@ GameObject:
   - component: {fileID: 522174407100500737}
   - component: {fileID: 4787313447717984714}
   - component: {fileID: -1701248038967600681}
+  - component: {fileID: 7721696308390492741}
   m_Layer: 0
   m_Name: burgerFinish-plated
   m_TagString: BurgerFinish
@@ -550,6 +551,18 @@ MonoBehaviour:
   ApplyAsTransform: 0
   AllowCollisionToAssumeOwner: 1
   Rigidbody: {fileID: 390463942641314164}
+--- !u!114 &7721696308390492741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5200381433780497135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d685e874094262b534d83bd555a36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7448600472440971141
 GameObject:
   m_ObjectHideFlags: 0

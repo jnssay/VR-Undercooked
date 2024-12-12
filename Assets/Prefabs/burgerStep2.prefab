@@ -107,6 +107,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -6736523192949829344}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3554527e9ebec224c96f948e325ccd81,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7268503427688836292}
   m_SourcePrefab: {fileID: 100100000, guid: 3554527e9ebec224c96f948e325ccd81, type: 3}
 --- !u!1 &2585515090432017836 stripped
 GameObject:
@@ -373,6 +377,7 @@ MonoBehaviour:
   nextBurgerPrefab: {fileID: 2470594265459198826, guid: e61df26e27add4413a3ae41cf6a3aa39,
     type: 3}
   burgerStep: 2
+  spawner: {fileID: 7268503427688836292}
 --- !u!114 &-6736523192949829344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +415,31 @@ MonoBehaviour:
   ApplyAsTransform: 0
   AllowCollisionToAssumeOwner: 1
   Rigidbody: {fileID: 114391713262553149}
+--- !u!114 &7268503427688836292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2585515090432017836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 29116766, guid: 0ae8d181602a00248a82f64a684a1c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Multiplayer: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 2585515090432017836}
+  - {fileID: 2470594265459198826, guid: e61df26e27add4413a3ae41cf6a3aa39, type: 3}
+  - {fileID: 6415783087924490230, guid: e7d5a45ba524646e3a129395f7a32e4d, type: 3}
+  - {fileID: 5200381433780497135, guid: 861eb449614fb40a5b911841315fd388, type: 3}
+  OnObjectSpawn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnObjectDespawn:
+    m_PersistentCalls:
+      m_Calls: []
+  ForceSync: 1
 --- !u!4 &2930234678292815638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3554527e9ebec224c96f948e325ccd81,

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using Alteruna;
 
 public class FryingPan : MonoBehaviour
 {
@@ -11,8 +12,7 @@ public class FryingPan : MonoBehaviour
     public float cookingTime = 5.0f;
     private bool readyToCook = false;
     public float flipForce = 1.0f;
-
-
+    public Spawner spawner;
 
     // Reference to the cooked version prefab
     public GameObject cookedFoodPrefab;
@@ -89,13 +89,14 @@ public class FryingPan : MonoBehaviour
             position = rawFood.transform.position;
             rotation = rawFood.transform.rotation;
             // Instantiate the cooked food at the position of the raw food
-            GameObject cookedFood = Instantiate(cookedFoodPrefab, position, rotation);
+            // GameObject cookedFood = Instantiate(cookedFoodPrefab, position, rotation);
+            GameObject cookedFood = spawner.Spawn(0, position, rotation);
             FlipFood(cookedFood);
         }
 
 
 
-        
+
         // Destroy the raw food
         Destroy(rawFood);
     }

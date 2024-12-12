@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5043536225672434224}
   - component: {fileID: 6996322014421317022}
   - component: {fileID: -4503306488970756547}
+  - component: {fileID: 1276679962724984812}
   m_Layer: 0
   m_Name: pattyRaw
   m_TagString: Raw-Fry
@@ -348,3 +349,15 @@ MonoBehaviour:
   ApplyAsTransform: 0
   AllowCollisionToAssumeOwner: 1
   Rigidbody: {fileID: 5441869119089278536}
+--- !u!114 &1276679962724984812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5650493546573588151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d685e874094262b534d83bd555a36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Alteruna;
 using UnityEngine;
 
 public class BurgerStackable : MonoBehaviour
@@ -8,6 +9,7 @@ public class BurgerStackable : MonoBehaviour
     public int burgerStep; // Current step of this burger piece
     private string burgerStepTag; // Dynamically assigned tag for this step
     private string nextBurgerIngredient; // Expected next ingredient's tag
+    public Spawner spawner;
 
     private void Start()
     {
@@ -59,7 +61,8 @@ public class BurgerStackable : MonoBehaviour
         Vector3 position = transform.position; // Keep the same position
         Quaternion rotation = transform.rotation; // Keep the same rotation
 
-        GameObject burger = Instantiate(nextBurgerPrefab, position, rotation);
+        // GameObject burger = Instantiate(nextBurgerPrefab, position, rotation);
+        GameObject burger = spawner.Spawn(burgerStep-1, position, rotation);
 
         // Clean up the current and other objects
         Destroy(other.gameObject);

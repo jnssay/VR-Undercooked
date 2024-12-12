@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Alteruna;
 
 public class Plating : MonoBehaviour
 {
     public GameObject burgerPrefab;
+    public Spawner spawner;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("BurgerPrefinish"))
@@ -24,7 +26,7 @@ public class Plating : MonoBehaviour
     {
         Vector3 position = gameObject.transform.position;
         Quaternion rotation = gameObject.transform.rotation;
-        GameObject burger = Instantiate(burgerPrefab, position, rotation);
+        GameObject burger = spawner.Spawn(0, position, rotation);
         Destroy(other.gameObject);
         // KillPlate();
         Destroy(gameObject);
