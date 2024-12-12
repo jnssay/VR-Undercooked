@@ -10,7 +10,6 @@ public class NumChopsBarControl : MonoBehaviour
     public Slider hp_slider;
     public Image image;
     public GameObject num_chops_bar;
-    public GameObject chopping_board;
 
     private RawFoodControl raw_food_control;
     private GameControl game_control;
