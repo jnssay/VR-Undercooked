@@ -6,7 +6,7 @@ public class PlayAudioOnTrigger : MonoBehaviour
 {
     public AudioClip chop_meat_sound;
     public AudioClip chop_cheese_sound;
-    public AudioClip cannon_sound;
+    
 
     private AudioSource source;
 
@@ -35,14 +35,6 @@ public class PlayAudioOnTrigger : MonoBehaviour
                 source.PlayOneShot(chop_cheese_sound);
             }
 
-        }
-
-        if ((other.tag == "BurgerFinish") || (other.tag == "SoupFinish"))
-        {
-            if (source != null)
-            {
-                source.PlayOneShot(cannon_sound);
-            }
         }
     }
 }
