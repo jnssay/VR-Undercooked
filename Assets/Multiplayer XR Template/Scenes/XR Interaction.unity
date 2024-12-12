@@ -1160,7 +1160,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0.000000007450581, z: 0.000000029802322}
@@ -6353,6 +6353,18 @@ MonoBehaviour:
   _uidString: 451cf0d4-549c-40ce-aa8b-ae1943ebdada
   Reliability: 1
   LocalMethodBehavior: 1
+--- !u!114 &1275306663 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6389108281811035298, guid: 6aa3f960d97c01348ace93bca6498d9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1623924992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ba4e3a288fc444095406175fc27776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1289056246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7605,6 +7617,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3995517582588759321, guid: 5494a7be7ffc7c64bba3861d37c5311e,
+        type: 3}
+      propertyPath: scoreController
+      value: 
+      objectReference: {fileID: 1275306663}
     - target: {fileID: 4752848582215897699, guid: 5494a7be7ffc7c64bba3861d37c5311e,
         type: 3}
       propertyPath: m_IsActive
@@ -7656,7 +7673,7 @@ PrefabInstance:
     - target: {fileID: 878579679001563256, guid: 6aa3f960d97c01348ace93bca6498d9c,
         type: 3}
       propertyPath: countdown
-      value: 120
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1005126547352277492, guid: 6aa3f960d97c01348ace93bca6498d9c,
         type: 3}
@@ -7742,6 +7759,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -1.5399988
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481559029312847140, guid: 6aa3f960d97c01348ace93bca6498d9c,
+        type: 3}
+      propertyPath: m_Spacing
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2481559029312847140, guid: 6aa3f960d97c01348ace93bca6498d9c,
         type: 3}
@@ -8058,6 +8080,11 @@ PrefabInstance:
       propertyPath: cannon
       value: 
       objectReference: {fileID: 930914761}
+    - target: {fileID: 6389108281811035298, guid: 6aa3f960d97c01348ace93bca6498d9c,
+        type: 3}
+      propertyPath: MissScore
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6907992101212279934, guid: 6aa3f960d97c01348ace93bca6498d9c,
         type: 3}
       propertyPath: launchForce
