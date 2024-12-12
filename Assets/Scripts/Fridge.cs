@@ -1,5 +1,6 @@
-using System.Collections;
 using UnityEngine;
+using Alteruna;
+using System.Collections;
 
 public class Fridge : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class Fridge : MonoBehaviour
     public float spawnWaitTime = 2f;
     public bool useManualPosition = false;
     public Vector3 manualSpawnPosition;
+    public Spawner spawner;
+    public float spawnDistance = -1.0f;
+
+    private Coroutine spawnRoutine;
 
     void Awake()
     {
@@ -18,36 +23,72 @@ public class Fridge : MonoBehaviour
 
         // Store the spawn position slightly above the fridge
         if (useManualPosition)
-            spawnPosition = manualSpawnPosition;
-        else
-            spawnPosition = transform.position + Vector3.up * 3f + Vector3.forward * 0.6f + Vector3.left * 0.5f; // Adjust the offset as needed
-
-        spawnRotation = transform.rotation;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        // Check if the exiting object has the target component tag
-        if (other.CompareTag(targetComponentTag))
         {
-            Debug.Log("Food has been removed from the fridge: " + other.name);
-            foodOnFridge = false;
-
-            StartCoroutine(WaitAndInstantiateFood());
+            spawnPosition = manualSpawnPosition;
         }
+        else
+        {
+            spawnPosition = transform.position;
+            spawnRotation = transform.rotation;
+        }
+
+        // SpawnFirstFood();
     }
 
-    private IEnumerator WaitAndInstantiateFood()
+    // private void OnTriggerExit(Collider other)
+    // {
+    //     if (other.CompareTag(targetComponentTag))
+    //     {
+    //         Debug.Log("Food removed from fridge: " + other.name);
+    //         foodOnFridge = false;
+
+    //         // Start the delayed spawn only if not already running
+    //         if (spawnRoutine != null)
+    //         {
+    //             StopCoroutine(spawnRoutine);
+    //         }
+    //         spawnRoutine = StartCoroutine(WaitAndSpawnFood());
+    //     }
+    // }
+
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.CompareTag(targetComponentTag))
+    //     {
+    //         // Food is placed back before spawning new one
+    //         Debug.Log("Food placed back on fridge: " + other.name);
+    //         foodOnFridge = true;
+
+    //         // If we were waiting to spawn a new one, cancel that
+    //         if (spawnRoutine != null)
+    //         {
+    //             StopCoroutine(spawnRoutine);
+    //             spawnRoutine = null;
+    //         }
+    //     }
+    // }
+
+    private IEnumerator WaitAndSpawnFood()
     {
-        // Wait for 2 seconds
         yield return new WaitForSeconds(spawnWaitTime);
 
-        // Check again if the food is still not on the fridge
+        // Check again if no food is on the fridge
         if (!foodOnFridge)
         {
-            Debug.Log("Spawning food");
-            Instantiate(foodPrefab, spawnPosition, spawnRotation);
+            SpawnFood();
             foodOnFridge = true;
         }
+
+        spawnRoutine = null;
+    }
+
+    public void SpawnFood()
+    {
+        spawner.Spawn(0, spawnPosition, spawnRotation);
+    }
+
+    void SpawnFirstFood()
+    {
+        spawner.Spawn(0, spawnPosition, spawnRotation);
     }
 }
