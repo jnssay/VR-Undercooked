@@ -7318,6 +7318,11 @@ PrefabInstance:
       propertyPath: m_Value
       value: 1.0000008
       objectReference: {fileID: 0}
+    - target: {fileID: 878579679001563256, guid: 6aa3f960d97c01348ace93bca6498d9c,
+        type: 3}
+      propertyPath: countdown
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 1005126547352277492, guid: 6aa3f960d97c01348ace93bca6498d9c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
