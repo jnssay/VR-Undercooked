@@ -1205,3 +1205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   end_menu: {fileID: 4752848582215897699}
+  finalScoreText: {fileID: 2042101157083176359}
+  finalRankText: {fileID: 4883869282673457984}
+  objectivesCompletedText: {fileID: 7497616960014175913}
+  oredersMissedText: {fileID: 3097356978927119550}

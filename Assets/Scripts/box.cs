@@ -14,6 +14,8 @@ public class box : MonoBehaviour
     private float SoupTotalScore;
     private float MissedScore;
 
+    public int completeCount = 0;
+    public int missCount = 0;
 
     public TextMeshProUGUI burgerScoreText;
     public TextMeshProUGUI soupScoreText;
@@ -54,12 +56,14 @@ public class box : MonoBehaviour
                     PlayerScore += (BurgerScore + Mathf.Ceil(matchedOrder.timeRemaining));
                     BurgerTotalScore += (BurgerScore + Mathf.Ceil(matchedOrder.timeRemaining));
                     Debug.Log("Burger Detected! Adding: " + matchedOrder.timeRemaining);
+                    completeCount++;
                 }
                 else if (itemTag == "Soup")
                 {
                     PlayerScore += (SoupScore + Mathf.Ceil(matchedOrder.timeRemaining));
                     SoupTotalScore += (SoupScore + Mathf.Ceil(matchedOrder.timeRemaining));
                     Debug.Log("Soup Detected! Adding: " + matchedOrder.timeRemaining);
+                    completeCount++;
                 }
 
                 Debug.Log(PlayerScore);
@@ -70,6 +74,7 @@ public class box : MonoBehaviour
             {
                 MissedScore -= MissScore;
                 PlayerScore -= MissScore;
+                missCount++;
             }
         }
 
@@ -101,7 +106,8 @@ public class box : MonoBehaviour
             if (item.timeRemaining <= 0)
             {
                 MissedScore -= MissScore;
-                PlayerScore -= MissScore;  
+                PlayerScore -= MissScore;
+                missCount++;
                 Debug.Log($"Missed Order! Deducting: {MissScore}");
                 ordersSystem.itemList.Remove(item); 
                 break;

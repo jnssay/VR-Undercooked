@@ -45,7 +45,7 @@ public class Orders : MonoBehaviour
 
     public void AddItem(string newItem)
     {
-        if (itemList.Count < 5)
+        if (itemList.Count < 3)
         {
             ItemData newItemData = new ItemData(newItem, countdown);
             itemList.Add(newItemData);
@@ -61,11 +61,19 @@ public class Orders : MonoBehaviour
 
     private IEnumerator StartTimer(ItemData itemData, TextMeshProUGUI timerText)
     {
-        while (itemData.timeRemaining > 0)
+        float timeRemaining = itemData.timeRemaining;
+        float lastUpdateTime = Time.time;
+
+        while (timeRemaining > 0)
         {
-            itemData.timeRemaining -= Time.deltaTime;
-            timerText.text = $"Time: {Mathf.Ceil(itemData.timeRemaining)}s";
-            yield return null;
+            if (Time.time - lastUpdateTime >= 1f)
+            {
+                timeRemaining--;
+                timerText.text = $"Time: {timeRemaining}s";
+                lastUpdateTime = Time.time; 
+            }
+
+            yield return null; 
         }
 
         timerText.text = "Time's up!";
