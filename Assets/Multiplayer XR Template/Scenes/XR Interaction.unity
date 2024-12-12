@@ -7653,6 +7653,18 @@ PrefabInstance:
       propertyPath: countdown
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 878579679001563256, guid: 6aa3f960d97c01348ace93bca6498d9c,
+        type: 3}
+      propertyPath: soupImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 3a4864d93ad39b84bbc8490471ead7a0,
+        type: 3}
+    - target: {fileID: 878579679001563256, guid: 6aa3f960d97c01348ace93bca6498d9c,
+        type: 3}
+      propertyPath: burgerImage
+      value: 
+      objectReference: {fileID: 21300000, guid: b4dfc4827997d144ba24e20a2138da20,
+        type: 3}
     - target: {fileID: 1005126547352277492, guid: 6aa3f960d97c01348ace93bca6498d9c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
