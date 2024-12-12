@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Alteruna;
 using UnityEngine;
 
 public class PreCookSoup : MonoBehaviour
@@ -9,6 +10,7 @@ public class PreCookSoup : MonoBehaviour
     public string targetComponentTag = "Stove";
     private bool readyToCook = false;
     private Coroutine cookingCoroutine;
+    public Spawner spawner;
 
     void Start()
     {
@@ -77,7 +79,8 @@ public class PreCookSoup : MonoBehaviour
         // }
 
         yield return new WaitForSeconds(cookingTime);
-        Instantiate(preFinishSoupPrefab, transform.position, transform.rotation);
+        spawner.Spawn(0, transform.position, transform.rotation);
+        // Instantiate(preFinishSoupPrefab, transform.position, transform.rotation);
         Destroy(this.gameObject);
     }
 }

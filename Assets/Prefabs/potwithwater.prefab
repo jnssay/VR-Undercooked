@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 932793493587419680}
   - component: {fileID: 7964917834182553218}
   - component: {fileID: 4957086410258864058}
+  - component: {fileID: 480852393388086207}
   m_Layer: 0
   m_Name: water
   m_TagString: Untagged
@@ -120,6 +121,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSoupPrefab: {fileID: 7590418528398971278, guid: e0ee7ff44e6004053aa2d95c2a4d91aa,
     type: 3}
+  spawner: {fileID: 480852393388086207}
+--- !u!114 &480852393388086207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7554914081175125044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 29116766, guid: 0ae8d181602a00248a82f64a684a1c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Multiplayer: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 7590418528398971278, guid: e0ee7ff44e6004053aa2d95c2a4d91aa, type: 3}
+  OnObjectSpawn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnObjectDespawn:
+    m_PersistentCalls:
+      m_Calls: []
+  ForceSync: 1
 --- !u!1001 &1904364496689914116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146,17 +170,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a473530cb0fb0b646896464b2ebe55c3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 77.9302
+      value: 78.09224
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a473530cb0fb0b646896464b2ebe55c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.408167
+      value: 16.770548
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a473530cb0fb0b646896464b2ebe55c3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -97.7063
+      value: -97.149635
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a473530cb0fb0b646896464b2ebe55c3,
         type: 3}
@@ -226,6 +250,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -8753883348299039776}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a473530cb0fb0b646896464b2ebe55c3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3459433346583424881}
   m_SourcePrefab: {fileID: 100100000, guid: a473530cb0fb0b646896464b2ebe55c3, type: 3}
 --- !u!1 &1633892671537568853 stripped
 GameObject:
@@ -370,7 +398,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -493,6 +521,18 @@ MonoBehaviour:
   ApplyAsTransform: 0
   AllowCollisionToAssumeOwner: 1
   Rigidbody: {fileID: 5016932335351234320}
+--- !u!114 &3459433346583424881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633892671537568853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d685e874094262b534d83bd555a36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2154708637600974575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a473530cb0fb0b646896464b2ebe55c3,

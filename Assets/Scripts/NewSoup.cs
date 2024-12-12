@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Alteruna;
 
 public class NewSoup : MonoBehaviour
 {
     public GameObject nextSoupPrefab;
+    public Spawner spawner;
 
     private void OnTriggerEnter(Collider ingredient) {
         if (ingredient.CompareTag("Raw-Fry"))
@@ -25,6 +27,6 @@ public class NewSoup : MonoBehaviour
 
     private void PutMeatInSoup(Vector3 position, Quaternion rotation)
     {
-        Instantiate(nextSoupPrefab, position, rotation);
+        spawner.Spawn(0, position, rotation);
     }
 }
